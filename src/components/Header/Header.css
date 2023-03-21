@@ -1,0 +1,29 @@
+header {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.header__container {
+    display: flex;
+    height: 48px;
+    
+}
+
+.header__container__logo {
+    width: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.header__container__logo img {
+
+    width: 30px;
+    height: 30px;
+}
+
+.header__container__nav {
+    background-color: white;
+    width: 972px;
+}

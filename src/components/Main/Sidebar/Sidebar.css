@@ -1,0 +1,32 @@
+
+
+.sidebar {
+    width: calc(164*100/100);
+    height: 400px;
+    background-color: #fff;
+    margin-right: 10px;
+
+
+}
+
+.sidebar__container  {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar__container ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar__container li {
+    width: 164px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar__container li a {
+    color: black;
+}

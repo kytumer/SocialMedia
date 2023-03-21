@@ -1,0 +1,32 @@
+.wrapper {
+    min-height: 1106px;
+    overflow: hidden;
+    background-color: #EDEEF0;
+}
+
+._container {
+    max-width: 1136px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.Main__container {
+    display: flex;
+    margin-top: 10px;
+}
+
