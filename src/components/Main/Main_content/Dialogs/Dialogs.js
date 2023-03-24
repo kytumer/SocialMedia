@@ -21,22 +21,16 @@ const Message = (props) => {
 }
 
 
-const Dialogs = () => {
+const Dialogs = (props) => {
 
-    let dialogsData = [
-        { name: 'Кирилл', id: 1 },
-        { name: 'Арина', id: 2 },
-        { name: 'Алексей', id: 3 },
-        { name: 'Денис', id: 4 },
-        { name: 'Ренат', id: 5 },
-    ]
 
-    let dialogsElemetns = dialogsData.map(
+    let dialogsElemetns = props.dialogsData.map (
         (dialog) => {
             return (
-                <Dialog name={dialog.name} id={dialog.id} />
+                <Dialog name={dialog.name} id={dialog.id}/>
             )
-        })
+        }
+    )
 
     return (
         <div className='Dialogs'>
@@ -55,3 +49,7 @@ const Dialogs = () => {
 }
 
 export default Dialogs;
+
+
+
+

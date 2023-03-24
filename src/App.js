@@ -12,6 +12,16 @@ import Settings from './components/Main/Main_content/Settings/Settings';
 
 
 const App = () => {
+
+  let dialogsData = [
+    { name: 'Кирилл', id: 1 },
+    { name: 'Арина', id: 2 },
+    { name: 'Алексей', id: 3 },
+    { name: 'Денис', id: 4 },
+    { name: 'Ренат', id: 5 },
+    
+]
+
   return (
     <BrowserRouter>
       <div className="wrapper">
@@ -21,7 +31,7 @@ const App = () => {
             <Sidebar />
             <Routes>
               <Route path="/profile/*" element={<Profile />} />
-              <Route path="/dialogs/*" element={<Dialogs />} />
+              <Route path="/dialogs/*" element={<Dialogs dialogsData={dialogsData}/>} />
               <Route path="/friends/*" element={<Friends />} />
               <Route path="/music/*" element={<Music />} />
               <Route path="/settings/*" element={<Settings />} />
