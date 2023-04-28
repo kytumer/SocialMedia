@@ -11,16 +11,8 @@ import Music from './components/Main/Main_content/Music/Music';
 import Settings from './components/Main/Main_content/Settings/Settings';
 
 
-const App = () => {
+const App = (props) => {
 
-  let dialogsData = [
-    { name: 'Кирилл', id: 1 },
-    { name: 'Арина', id: 2 },
-    { name: 'Алексей', id: 3 },
-    { name: 'Денис', id: 4 },
-    { name: 'Ренат', id: 5 },
-    
-]
 
   return (
     <BrowserRouter>
@@ -31,7 +23,7 @@ const App = () => {
             <Sidebar />
             <Routes>
               <Route path="/profile/*" element={<Profile />} />
-              <Route path="/dialogs/*" element={<Dialogs dialogsData={dialogsData}/>} />
+              <Route path="/dialogs/*" element={<Dialogs updateNewMessage={props.updateNewMessage} newMessegeText={props.State.newMessegeText}  addMessage={props.addMessage} messageData={props.State.messageData}  dialogsData={props.State.dialogsData}/>} />
               <Route path="/friends/*" element={<Friends />} />
               <Route path="/music/*" element={<Music />} />
               <Route path="/settings/*" element={<Settings />} />
